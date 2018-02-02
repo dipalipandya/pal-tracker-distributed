@@ -1,9 +1,10 @@
 applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
-  host: registration-pal-INITIALS
+  host: registration-pal-dp
   memory: 1G
   instances: 1
+  env:
   services:
   - tracker-allocations-database
   - tracker-service-registry
